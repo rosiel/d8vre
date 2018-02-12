@@ -1,5 +1,6 @@
 {
     "name": "rdrew/d8vre",
+    "type": "drupal-theme",
     "authors": [
         {
             "name": "rdrew",

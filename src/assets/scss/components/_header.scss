@@ -1,13 +1,13 @@
-
 header {
-  background: $blue1;
-  padding: $global-padding;
-  .site-search {
-      display:none;
-      @include breakpoint(medium) {
-          display:block;
-      }
-  }}
+    background: $header-bg-color;
+    padding: $global-padding;
+    .site-search {
+        display: none;
+        @include breakpoint(medium) {
+            display: block;
+        }
+    }
+}
 .region-header {
     @include grid-row();
     .branding {
@@ -15,7 +15,6 @@ header {
     }
     .site-search {
         @extend .top-bar-right;
-        margin-top: 2rem;
-
+        //margin-top: 2rem;
     }
 }

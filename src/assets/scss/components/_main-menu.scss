@@ -13,11 +13,14 @@
 }
 .menu--main {
     
+    li:hover {
+        background: lighten( $menubar-color, 10% );
+    }
     .is-dropdown-submenu{
 
-    background: $primary-color;
+    background: $menubar-color;
     li:hover {
-        background:$blue1;
+        background: lighten( $menubar-color, 10% );
     }
     }
     a {

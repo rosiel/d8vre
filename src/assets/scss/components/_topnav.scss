@@ -12,7 +12,7 @@
       float:right;
   }
 .topnav {
-  &__wrapper { background: $blue5; }
+    &__wrapper { background: $topnav-color; }
   &__container { @include grid-row; }
 
 

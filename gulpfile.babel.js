@@ -38,8 +38,8 @@ gulp.task('build',
 // Task: gulp (Build the site, run the server, and watch for file changes)
 // ------------------------------------------------------------------------
 gulp.task('default',
-    //gulp.series('build', serverRemote, watch));
-    gulp.series('build', serverLocal, watch));
+    gulp.series('build', serverRemote, watch));
+    //gulp.series('build', serverLocal, watch));
 
 
 // ------------------------------------------------------------------------

@@ -25,13 +25,13 @@ margin-bottom: 0;
     }
   }
   .site-name {
-    padding-top: $global-padding;
+    //padding-top: $global-padding;
     //width: 20rem;
     a {
         font-family: $merriweather;
       color: $white;
       //font-size: 2.6rem;
-      font-size: rem-calc(39.063);
+      font-size: rem-calc(32);
 
       margin-bottom:0;
       line-height:1;
@@ -40,6 +40,7 @@ margin-bottom: 0;
     .site-slogan {
         font-size:1.3rem;
       font-size: rem-calc(20);
+      line-height:1;
     }
 
 }

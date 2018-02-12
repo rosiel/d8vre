@@ -1,29 +1,28 @@
+//@format
 // Styling for content elements.
 .content__container {
     padding: $global-padding*2 0;
-    @include grid-row();
-    .region-content{
-
-    }
-        .region-content{
-            @include grid-column();
-        }
-        .content__sidebar-right {
-            padding: $global-padding;
-            @include grid-column();
-        }
+    @include flex-grid-row();
+}
+.region-content {
+    @include grid-column();
+}
+.content__sidebar-right {
+    padding: $global-padding;
+    @include grid-column();
+}
+.layout-sidebar-right {
     @include breakpoint(large) {
-        .region-content{
-            @include grid-column(8);
+        .region-content {
+            @include grid-column(9);
         }
         .content__sidebar-right {
             padding: $global-padding;
-            @include grid-column(4);
+            @include grid-column(3);
         }
     }
-    .region-content{
-
-    }
+}
+.region-content {
 }
 //.content__container,
 //.footer__container
@@ -37,14 +36,10 @@
     padding-bottom: 1rem;
 }
 
-
-
 .content__main .thumbnail img {
     max-width: rem-calc(350);
-
 }
 
 .content__main img {
-    @extend .thumbnail; 
-
+    @extend .thumbnail;
 }

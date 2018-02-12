@@ -1,3 +1,4 @@
+.region-sidebar-right > .block,
 .news-feed {
     @include callout(#ccc);
     .item-list {
@@ -10,6 +11,9 @@
             border-bottom: 1px dotted #ccc;
             padding: rem-calc(4) 0;
             line-height: 1.4;
+            display: block;
+            width: 100%;
+            padding:0;
             &:hover {
                 background:$white;
             }

@@ -1,0 +1,19 @@
+name: STARTERKIT
+type: theme
+description: 'STARTERKIT'
+version: 1.0
+core: 8.x
+base theme: stable
+
+libraries:
+    - STARTERKIT/global
+
+regions:
+  menus: Menus
+  search: Search
+  header: Header
+  breadcrumb: Breadcrumb
+  help: Help
+  content: Content
+  sidebar: Sidebar
+  footer: Footer

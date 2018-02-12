@@ -1,0 +1,26 @@
+.region-menubar {
+    @include flex-grid-row;
+}
+.menubar__wrapper {
+    background: $blue2;
+    min-height: 5px;
+    .menu--arma-main-menu {
+        display: none;
+        @include breakpoint(medium) {
+            display: block;
+        }
+    }
+}
+.menu--arma-main-menu {
+    
+    .is-dropdown-submenu{
+
+    background: $primary-color;
+    li:hover {
+        background:$blue1;
+    }
+    }
+    a {
+        color: $white;
+    }
+}

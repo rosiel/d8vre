@@ -1,0 +1,6 @@
+#!/usr/bin/env bash
+
+echo "What are you proxying? (ex: 'cshr.local')"
+read proxy
+
+browser-sync start --proxy "$proxy" --serveStatic 'dist/assets/css' --files 'dist/assets/css'

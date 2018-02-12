@@ -1,0 +1,32 @@
+.news-feed {
+    @include callout(#ccc);
+    .item-list {
+        @extend .no-bullet;
+    }
+    ul {
+        list-style: none;
+        margin:0;
+        li {
+            border-bottom: 1px dotted #ccc;
+            padding: rem-calc(4) 0;
+            line-height: 1.4;
+            &:hover {
+                background:$white;
+            }
+        }
+        a {
+            font-size:.9rem;
+        }
+    }
+    .more-link a {
+        @extend .hollow;
+        @extend .button;
+        @extend .tiny;
+        background-color: $white;
+        color: $secondary-color;
+        border-color: $secondary-color;
+        @include button-expand(true);
+        margin:0;
+        margin-top: $global-padding;
+    }
+}

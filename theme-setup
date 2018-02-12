@@ -1,0 +1,95 @@
+#!/usr/bin/env bash
+
+
+#get the vars
+echo "
+###################################################
+### What is the machine name of the new theme:  ###
+###################################################
+"
+read themeName
+#echo "What is the display name of the new theme:"
+#read themeNameD
+
+echo "
+###########################################
+### Installing Dependancies from Bower  ###
+###########################################
+"
+bower install
+echo "
+#############
+### Done ###
+#############
+"
+echo "
+###########################################
+### Installing Dependancies from Bower  ###
+###########################################
+"
+npm install
+echo "
+#############
+### Done ###
+#############
+"
+
+
+#make backup dir
+mkdir bkup
+#backup files
+mv *.libraries.yml *.info.yml config.yml bkup
+#mv *.libraries.yml bkup
+
+echo "
+##################################
+### made backups just in case  ###
+##################################
+"
+
+#rename the files
+cp STARTERKIT/STARTERKIT.info.yml ./$themeName.info.yml
+cp STARTERKIT/STARTERKIT.libraries.yml ./$themeName.libraries.yml
+cp STARTERKIT/config.yml .
+echo "
+##########################
+### Renamed the files  ###
+##########################
+"
+
+#insert the name in a few files
+grep -rl STARTERKIT *.yml | xargs sed -i '' -e "s/STARTERKIT/$themeName/"
+#grep -rl "STARTERKIT" *.info.yml | xargs sed -i '' -e "s/STARTERKIT/$themeNameD/"
+
+
+
+echo "
+#################################
+### Create a clean git repo?  ###
+#################################
+"
+read choice
+case "$choice" in
+  y)
+    rm -rf .git
+    rm -rf bkup
+    git init
+    git add --all && git commit -m "1st commit"
+    ;;
+
+  n)
+    ;;
+
+  *)
+    echo "you are an idiot"
+    ;;
+
+esac
+
+echo "edited the files"
+echo "
+#################
+### Done :-)  ###
+#################
+"
+

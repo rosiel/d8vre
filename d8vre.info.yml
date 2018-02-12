@@ -1,0 +1,28 @@
+name: d8vre
+type: theme
+description: 'Drupal 8 Theme for ARMA'
+version: 1.0
+core: 8.x
+base theme: stable
+
+libraries:
+    - arma/global
+
+component-libraries:
+    components:
+        paths:
+            - components
+
+
+regions:
+  topnav        : Top Navigation
+  header        : Header
+  menubar       : Menu Bar
+  sysmessages   : System Messages
+  breadcrumb    : Breadcrumb
+  content       : Content
+  sidebar_left  : Left Sidebar
+  sidebar_right : Right Sidebar
+  prefooter     : Pre-Footer
+  footer        : Footer
+  offcanvas     : Off Canvas (mobile menu)

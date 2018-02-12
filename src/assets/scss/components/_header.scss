@@ -1,0 +1,21 @@
+
+header {
+  background: $blue1;
+  padding: $global-padding;
+  .site-search {
+      display:none;
+      @include breakpoint(medium) {
+          display:block;
+      }
+  }}
+.region-header {
+    @include grid-row();
+    .branding {
+        @extend .top-bar-left;
+    }
+    .site-search {
+        @extend .top-bar-right;
+        margin-top: 2rem;
+
+    }
+}

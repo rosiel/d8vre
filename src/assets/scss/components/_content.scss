@@ -1,0 +1,50 @@
+// Styling for content elements.
+.content__container {
+    padding: $global-padding*2 0;
+    @include grid-row();
+    .region-content{
+
+    }
+        .region-content{
+            @include grid-column();
+        }
+        .content__sidebar-right {
+            padding: $global-padding;
+            @include grid-column();
+        }
+    @include breakpoint(large) {
+        .region-content{
+            @include grid-column(8);
+        }
+        .content__sidebar-right {
+            padding: $global-padding;
+            @include grid-column(4);
+        }
+    }
+    .region-content{
+
+    }
+}
+//.content__container,
+//.footer__container
+//{
+//@include grid-row;
+//}
+.content__main,
+.content__sidebar,
+.content__footer {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+
+
+.content__main .thumbnail img {
+    max-width: rem-calc(350);
+
+}
+
+.content__main img {
+    @extend .thumbnail; 
+
+}

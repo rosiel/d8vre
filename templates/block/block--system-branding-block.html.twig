@@ -1,0 +1,23 @@
+<div{{ attributes.addClass('branding block__wrapper') }}>
+  {{ title_prefix }}
+  {% if label %}
+    <h4{{ title_attributes }}>{{ label }}</h4>
+  {% endif %}
+  {{ title_suffix }}
+  {% if site_logo %}
+  <a href="{{ path('<front>') }}" title="{{ 'Home'|t }}" rel="home" class="branding__image site-logo">
+      <img src="{{ site_logo }}" alt="{{ 'Home'|t }}" />
+    </a>
+  {% endif %}
+  <div class="branding__text">
+      {% if site_name %}
+      <div class="site-name">
+          <a href="{{ path('<front>') }}" title="{{ 'Home'|t }}" rel="home">{{ site_name }}</a>
+      </div>
+      {% endif %}
+      {% if site_slogan %}
+      <div class="site-slogan">{{ site_slogan }}</div>
+      {% endif %}
+  </div>
+</div>
+

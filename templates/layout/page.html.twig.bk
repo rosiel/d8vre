@@ -1,0 +1,65 @@
+<div class="l-main">
+  <div class="row">
+    <div class="small-12 columns  menu-bar__wrapper">
+      
+      {#_____top-bar_____#}
+      <div class="top-bar" id="menu-search-wrapper">
+        
+        {#_____logo_____#}
+
+        <ul class="menu">
+          <li class="top-bar-title">
+            <a class="top-bar-title__link" href="http://upei.ca" target="_blank">
+              <span class="upei-logo top-bar-title__logo">
+                {% include active_theme_path() ~ '/dist/assets/img/logo.svg' %}
+              </span>
+            </a> 
+          </li>
+        </ul>          
+        
+        {#____toggle_____#}
+        <div class="title-bar" data-responsive-toggle="responsive-menu" data-hide-for="medium">
+          <button class="menu-icon" type="button" data-toggle></button>
+          <div class="title-bar-title">Menu</div>
+        </div>
+
+        {#_____menus_____#}
+        <div class="top-bar-left main-menu__wrapper" id="responsive-menu">
+          {{ page.menus }}
+        </div>
+        <div class="top-bar-right search__wrapper">
+          {{ page.search }}
+        </div>
+      </div>
+      {#_____/top-bar_____#}
+
+    </div>
+
+
+
+    <header class="small-12 columns  header__wrapper" role="banner">
+      {{ page.header }}
+    </header>
+  </div>
+  <div class="row">
+    <div class="small-12 columns site-help__wrapper">
+      {{ page.help }}
+    </div>
+    <div class="small-12 columns show-for-medium breadcrumb__wrapper">
+      {{ page.breadcrumb }}
+    </div>
+    {% set content_class = page.sidebar ? 'medium-8' : 'medium-12' %}
+    <div class="small-12 {{ content_class }} columns content__main">
+      {{ page.content }}
+    </div>
+    {% if page.sidebar %}
+      <aside class="small-12 medium-4 columns content__sidebar" role="complementary">
+        {{ page.sidebar }}
+      </aside>
+    {% endif %}
+    <footer class="small-12 columns content__footer" role="contentinfo">
+      <hr />
+      {{ page.footer }}
+    </footer>
+  </div>
+</div>

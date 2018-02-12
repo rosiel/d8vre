@@ -1,0 +1,62 @@
+//--------------
+//-  behavior  -
+//--------------
+
+.title-bar {
+  @include breakpoint(large) {
+    display: none;
+  }
+}
+.topnav .main-menu__container {
+  display: none;
+  @include breakpoint(large) {
+    display: block;
+  }
+}
+.js-off-canvas-overlay {
+  @include breakpoint(large) {
+    display:none !important;
+  }
+}
+.off-canvas-wrapper {
+  @include breakpoint(large) {
+    display:none;
+  }
+}
+.user-logged-in .close-button, .close-button.medium {
+  right: 1rem;
+  top: 2rem;
+  font-size: 2em;
+  line-height: 1;
+}
+//-----------
+//-  style  -
+//-----------
+
+.region-offcanvas {
+    .site-search {
+        margin:$global-padding;
+        input {
+            width:13rem;
+        }
+        @include breakpoint(medium) {
+            display: none;
+        }
+    }
+  .menu a {
+    color: $light-gray;
+    &:hover {
+      background: lighten($black, 10%);
+
+    }
+
+  }
+  .is-accordion-submenu {
+  
+      background: lighten($black, 20%);
+  }
+  .is-accordion-submenu-parent[aria-expanded="true"] {
+  
+      background: lighten($black, 10%);
+  }
+}

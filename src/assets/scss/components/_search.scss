@@ -1,0 +1,37 @@
+
+
+
+
+
+.site-search {
+  $icon-size: 25;
+  //input wrapper
+  .form-item {
+    position: relative;
+  }
+  form {
+    justify-content: space-around;
+    display:flex;
+  }
+  //input field
+  input[type='search'] {
+    width: rem-calc(250);
+    border-color: darken($blue1, 10%);
+    border-radius: 20px;
+  }
+  //icon
+  svg {
+    position: absolute;
+    right:6px;
+    top: 4px;
+    padding-top: 4px;
+    width: rem-calc($icon-size);
+    height: rem-calc($icon-size);
+    path {
+      fill: $secondary-color;
+      fill: $blue2;
+
+    }
+  }
+}
+

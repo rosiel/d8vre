@@ -1,46 +1,45 @@
-
+//@format
 //------------
 //-  layout  -
 //------------
 .branding {
-  @include media-object-container;
-margin-bottom: 0;
+    @include media-object-container;
+    margin-bottom: 0;
 }
 
-  .branding__image {
+.branding__image {
     @include media-object-section;
-  }
-  .branding__text {
+}
+.branding__text {
     @include media-object-section;
-  }
+}
 //-----------
 //-  style  -
 //-----------
 
 .branding {
-  .site-logo {
-    img {
-      //width: 100px;
-      width:$logowidth;
+    .site-logo {
+        img {
+            //width: 100px;
+            width: $logowidth;
+        }
     }
-  }
-  .site-name {
-    //padding-top: $global-padding;
-    //width: 20rem;
-    a {
-        font-family: $merriweather;
-      color: $white;
-      //font-size: 2.6rem;
-      font-size: rem-calc(32);
-
-      margin-bottom:0;
-      line-height:1;
+    .site-name {
+        //padding-top: $global-padding;
+        //width: 20rem;
+        a {
+            font-family: $merriweather;
+            color: $black;
+            //font-size: 2.6rem;
+            font-size: rem-calc(32);
+            margin-bottom: 0;
+            line-height: 1;
+        }
     }
-  }
     .site-slogan {
-        font-size:1.3rem;
-      font-size: rem-calc(20);
-      line-height:1;
+        font-size: 1.3rem;
+        font-size: rem-calc(20);
+        line-height: 1;
+        @extend .subheader;
     }
-
 }

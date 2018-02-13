@@ -16,7 +16,7 @@
   //input field
   input[type='search'] {
     width: rem-calc(250);
-    border-color: darken($blue1, 10%);
+    border-color: $grey4;
     border-radius: 20px;
   }
   //icon
@@ -29,7 +29,7 @@
     height: rem-calc($icon-size);
     path {
       fill: $secondary-color;
-      fill: $blue2;
+      fill: $grey1;
 
     }
   }

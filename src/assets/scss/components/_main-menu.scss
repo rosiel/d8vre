@@ -1,8 +1,9 @@
+//@format
 .region-menubar {
     @include flex-grid-row;
 }
 .menubar__wrapper {
-    background: $blue2;
+    background: $menubar-color;
     min-height: 5px;
     .menu--arma-main-menu {
         display: none;
@@ -12,18 +13,20 @@
     }
 }
 .menu--main {
-    
-    li:hover {
-        background: lighten( $menubar-color, 10% );
-    }
-    .is-dropdown-submenu{
-
-    background: $menubar-color;
-    li:hover {
-        background: lighten( $menubar-color, 10% );
-    }
-    }
     a {
-        color: $white;
+        color: $black2;
+    }
+    li {
+        background-color: $menubar-color;
+        transition: $button-transition;
+    }
+    li:hover {
+        background-color: darken($menubar-color, 10%);
+    }
+    .is-dropdown-submenu {
+        background: $menubar-color;
+        li:hover {
+            background: darken($menubar-color, 10%);
+        }
     }
 }

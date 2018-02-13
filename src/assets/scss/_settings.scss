@@ -73,7 +73,8 @@ $blue4: #014667;
 $blue5: #01344D;
 
 $foundation-palette: (
-  primary: #1779ba,
+  //primary: #1779ba,
+  primary: $upei-red,
   secondary: #767676,
   success: #3adb76,
   warning: #ffae00,
@@ -88,7 +89,7 @@ $white: #fefefe;
 
 
 $body-background: $white;
-$body-font-color: $black;
+$body-font-color: $black2;
 //$body-font-family: 'Helvetica Neue', Helvetica, Roboto, Arial, sans-serif;
 $body-font-family: $lato;
 $body-antialiased: true;

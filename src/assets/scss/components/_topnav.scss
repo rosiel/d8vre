@@ -1,41 +1,96 @@
+//@format
 // Styling for the header component.
 
-.menu-bar__wrapper {
-  background: $black;
-  padding: 0;
+//.menu-bar__wrapper {
+//background: $black;
+//padding: 0;
 
-  .title-bar {
-    justify-content: flex-start;
-  }
+//.title-bar {
+//justify-content: flex-start;
+//}
+//}
+//.region-topnav {
+////float: right;
+//@extend .top-bar-right;
+//}
+//.topnav {
+//&__wrapper {
+//background: $topnav-color;
+//}
+//&__container {
+//@include flex-grid-row;
+//}
+
+//@include top-bar-container;
+//$menu_height: 38px;
+//padding-top: 0;
+//padding-bottom: 0;
+
+//.menu a {
+//color: $white;
+//height: $menu_height;
+//line-height: $menu_height !important;
+//padding-top: 0;
+//padding-bottom: 0;
+//}
+//.icon {
+//width: 1rem;
+//height: 1rem;
+//}
+//}
+//.open-menu {
+//@include breakpoint(medium) {
+//display: none;
+//}
+//}
+
+.topnav__container {
+    //@include top-bar-container;
+    //@include flex-grid-row;
 }
-  .region-topnav {
-      float:right;
-  }
+
+.menu-bar__wrapper {
+    //background: $black;
+    padding: 0;
+
+    .title-bar {
+        justify-content: flex-start;
+    }
+}
 .topnav {
-    &__wrapper { background: $topnav-color; }
-  &__container { @include grid-row; }
+    @include top-bar-container();
+    @include flex-grid-row;
+    justify-content: flex-end;
 
+    &__wrapper {
+        background: $topnav-color;
+    }
+    &__container {
+        padding-top: 0;
+        padding-bottom: 0;
+    }
+    nav {
+        @include show-for(medium);
+    }
 
-  @include top-bar-container;
-  $menu_height: 38px;
-  padding-top: 0;
-  padding-bottom: 0;
-
-  .menu a {
-    color: $white;
-    height: $menu_height;
-    line-height: $menu_height !important;
+    $menu_height: 38px;
     padding-top: 0;
     padding-bottom: 0;
-  }
-  .icon {
-      width:1rem;
-      height:1rem;
-  }
-  
+
+    .menu a {
+        color: $white;
+        height: $menu_height;
+        line-height: $menu_height !important;
+        padding-top: 0;
+        padding-bottom: 0;
+    }
+    .icon {
+        width: 1rem;
+        //height: 1rem;
+    }
 }
 .open-menu {
     @include breakpoint(medium) {
-        display:none;
+        display: none;
     }
 }

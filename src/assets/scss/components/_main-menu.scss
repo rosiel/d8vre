@@ -5,11 +5,8 @@
 .menubar__wrapper {
     background: $menubar-color;
     min-height: 5px;
-    .menu--arma-main-menu {
-        display: none;
-        @include breakpoint(medium) {
-            display: block;
-        }
+    .menu--main {
+        @include show-for(medium);
     }
 }
 .menu--main {

@@ -2,11 +2,6 @@
 //-  behavior  -
 //--------------
 
-.title-bar {
-  @include breakpoint(large) {
-    display: none;
-  }
-}
 .topnav .main-menu__container {
   display: none;
   @include breakpoint(large) {

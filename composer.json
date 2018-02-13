@@ -7,5 +7,14 @@
             "email": "rdrew@upei.ca"
         }
     ],
-    "require": {}
+    "repositories": [
+        {
+            "type": "composer",
+            "url": "https://packages.drupal.org/8"
+        }
+    ],
+
+    "require": {
+        "drupal/components": "^1.0"
+    }
 }

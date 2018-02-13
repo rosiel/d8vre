@@ -1,0 +1,5 @@
+.sysmessages__container {
+    .region {
+        @include flex-grid-row;
+    }
+}

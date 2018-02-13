@@ -4,6 +4,7 @@
 
 
 .site-search {
+    @include show-for(medium);
   $icon-size: 25;
   //input wrapper
   .form-item {

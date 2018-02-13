@@ -1,6 +1,8 @@
 {#_____top-bar_____#}
 <div class="topnav" id="menu-search-wrapper">
     {{ page.topnav }}
-    <button type="button" class="open-menu button" data-toggle="offCanvas">Open Menu</button>
+    <button class="open-menu" data-toggle="offCanvas">
+    {% include '@components/utilities/icon.twig' with { icon: 'sign-out' } %}
+    </button>
 </div>
 {#_____/top-bar_____#}

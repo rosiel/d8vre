@@ -58,9 +58,12 @@
     }
 }
 .topnav {
+    @include show-for(medium);
+    $menu_height: rem-calc(38px);
     @include top-bar-container();
     @include flex-grid-row;
     justify-content: flex-end;
+    height: $menu_height;
 
     &__wrapper {
         background: $topnav-color;
@@ -70,10 +73,8 @@
         padding-bottom: 0;
     }
     nav {
-        @include show-for(medium);
     }
 
-    $menu_height: 38px;
     padding-top: 0;
     padding-bottom: 0;
 
@@ -89,8 +90,11 @@
         //height: 1rem;
     }
 }
-.open-menu {
-    @include breakpoint(medium) {
-        display: none;
+.mobile-logo {
+    icon {
+        background: $black3;
+    }
+    svg {
+        width: 100px;
     }
 }

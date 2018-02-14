@@ -40,7 +40,11 @@
 //  35. Title Bar
 //  36. Tooltip
 //  37. Top Bar
-@import url('https://fonts.googleapis.com/css?family=Lato:400,400i,700|Merriweather:400,400i,700');
+@import url('https://fonts.googleapis.com/css?family=Libre+Baskerville|Roboto');
+@import url('https://fonts.googleapis.com/css?family=Libre+Baskerville|Roboto|Roboto+Condensed');
+$libre: 'Libre Baskerville', serif;
+$roboto: 'Roboto', sans-serif;
+$roboto-condensed: 'Roboto Condensed', sans-serif;
 $merriweather: 'Merriweather', serif;
 $lato: 'Lato', sans-serif;
 @import 'util/util';
@@ -91,7 +95,7 @@ $white: #fefefe;
 $body-background: $white;
 $body-font-color: $black2;
 //$body-font-family: 'Helvetica Neue', Helvetica, Roboto, Arial, sans-serif;
-$body-font-family: $lato;
+$body-font-family: $roboto;
 $body-antialiased: true;
 $global-margin: 1rem;
 $global-padding: 1rem;
@@ -134,7 +138,7 @@ $block-grid-max: 8;
 // 4. Base Typography
 // ------------------
 
-$header-font-family: $merriweather;
+$header-font-family: $libre;
 $header-font-weight: $global-weight-normal;
 $header-font-style: normal;
 $font-family-monospace: Consolas, 'Liberation Mono', Courier, monospace;

@@ -14,6 +14,7 @@
 - put site info in config.yml
 - checkout `gulpfile.babel.js`
 - need to run `npm install && bower install`
+- add fonts to ****.libraries.yml
 
 ## Cool stuff
 - Foundation 6 is built in. Any of the components, etc from https://foundation.zurb.com/sites/docs/ will work out of the box if their markup is emulated.

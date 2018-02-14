@@ -1,0 +1,22 @@
+input {
+    &[type="file"] {
+
+        display:none;
+    }
+    &[type="submit"] {
+        @include button-style($upei-green, auto, auto);
+        
+
+
+    }
+    &[type="reset"] {
+
+        @include button-style($upei-orange, auto, $white);
+    }
+}
+label[for="file"] {
+    @include button;
+    display: inline-block;
+}
+
+

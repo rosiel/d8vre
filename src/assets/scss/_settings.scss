@@ -40,6 +40,11 @@
 //  35. Title Bar
 //  36. Tooltip
 //  37. Top Bar
+
+@import 'util/util';
+/*
+ *my Fonts
+ */
 @import url('https://fonts.googleapis.com/css?family=Libre+Baskerville|Roboto');
 @import url('https://fonts.googleapis.com/css?family=Libre+Baskerville|Roboto|Roboto+Condensed');
 $libre: 'Libre Baskerville', serif;
@@ -47,7 +52,11 @@ $roboto: 'Roboto', sans-serif;
 $roboto-condensed: 'Roboto Condensed', sans-serif;
 $merriweather: 'Merriweather', serif;
 $lato: 'Lato', sans-serif;
-@import 'util/util';
+$noto-sans: 'Noto Sans', sans-serif;
+$noto-serif: 'Noto Serif', serif;
+/*
+ *my Colors
+ */
 $upei-orange : #fbb040;
 $upei-green  : #5C8727;
 $upei-red    : #8c2004;
@@ -95,7 +104,7 @@ $white: #fefefe;
 $body-background: $white;
 $body-font-color: $black2;
 //$body-font-family: 'Helvetica Neue', Helvetica, Roboto, Arial, sans-serif;
-$body-font-family: $roboto;
+$body-font-family: $noto-sans;
 $body-antialiased: true;
 $global-margin: 1rem;
 $global-padding: 1rem;
@@ -138,7 +147,7 @@ $block-grid-max: 8;
 // 4. Base Typography
 // ------------------
 
-$header-font-family: $libre;
+$header-font-family: $noto-serif;
 $header-font-weight: $global-weight-normal;
 $header-font-style: normal;
 $font-family-monospace: Consolas, 'Liberation Mono', Courier, monospace;
@@ -163,6 +172,9 @@ $header-styles: (
     'h6': ('font-size': 16),
   ),
 );
+h2 {
+    font-style: italic;
+}
 $header-text-rendering: optimizeLegibility;
 $small-font-size: 80%;
 $header-small-font-color: $medium-gray;

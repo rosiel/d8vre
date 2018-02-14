@@ -7,11 +7,15 @@ base theme: stable
 
 libraries:
     - d8vre/global
+    - d8vre/fonts
 
 component-libraries:
     components:
         paths:
             - components
+
+
+
 stylesheets-remove: modules/contrib/roblib_vre_footer/css/roblib_vre_footer.css
 
 regions:

@@ -1,4 +1,4 @@
-PROXY: "family.researchspaces.ca"
+PROXY: "https://family.researchspaces.ca"
 LOCALPROXY: "arma.dev"
 THEMENAME: "d8vre"
 

@@ -1,5 +1,9 @@
 .sysmessages__container {
     .region {
         @include flex-grid-row;
+        > div {
+            width:100%;
+            margin-bottom:1rem;
+        }
     }
 }

@@ -13,7 +13,7 @@
     }
     .branding__text {
         @include media-object-section;
-        padding-left: 0;
+        padding-left: 0 !important;
     }
 }
 //-----------

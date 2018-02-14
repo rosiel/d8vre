@@ -21,6 +21,10 @@
 
 .branding {
     .site-logo {
+        @include show-for(medium);
+        border-right: 1px solid $grey3 !important;
+        padding-right: $global-padding/2;
+        margin-right: $global-padding/2;
         img {
             //width: $logowidth;
             width: 100px;
@@ -42,20 +46,22 @@
         font-size: 1.3rem;
         font-size: rem-calc(20);
         line-height: 1;
-        @extend .subheader;
+        //@extend .subheader;
+        color: $grey1;
     }
     @include breakpoint(medium) {
         .site-logo {
             img {
                 width: $logowidth;
             }
+            border-right: 1px solid $black1;
         }
         .site-name {
             //padding-top: $global-padding;
             //width: 20rem;
             a {
                 font-family: $merriweather;
-                color: $black;
+                color: $black2;
                 //font-size: 2.6rem;
                 font-size: rem-calc(32);
                 margin-bottom: 0;

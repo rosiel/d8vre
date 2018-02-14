@@ -1,65 +1,28 @@
 //@format
-// Styling for the header component.
-
-//.menu-bar__wrapper {
-//background: $black;
-//padding: 0;
-
-//.title-bar {
-//justify-content: flex-start;
-//}
-//}
-//.region-topnav {
-////float: right;
-//@extend .top-bar-right;
-//}
-//.topnav {
-//&__wrapper {
-//background: $topnav-color;
-//}
-//&__container {
-//@include flex-grid-row;
-//}
-
-//@include top-bar-container;
-//$menu_height: 38px;
-//padding-top: 0;
-//padding-bottom: 0;
-
-//.menu a {
-//color: $white;
-//height: $menu_height;
-//line-height: $menu_height !important;
-//padding-top: 0;
-//padding-bottom: 0;
-//}
-//.icon {
-//width: 1rem;
-//height: 1rem;
-//}
-//}
-//.open-menu {
-//@include breakpoint(medium) {
-//display: none;
-//}
-//}
-
-.topnav__container {
-    //@include top-bar-container;
-    //@include flex-grid-row;
-}
-
-.menu-bar__wrapper {
-    //background: $black;
-    padding: 0;
-
-    .title-bar {
-        justify-content: flex-start;
+$menu-breakpoint: medium;
+$menu_height: rem-calc(38px);
+.title-bar {
+    //height: $menu_height;
+    @include hide-for($menu-breakpoint);
+    @include flex-grid-row;
+    //padding-right: 0;
+    //padding-left: 0;
+    //background: $topnav-color;
+    .menu.icon {
+        height: rem-calc(20);
     }
 }
+.mobile-logo {
+    line-height: 0;
+    * {
+        line-height: 0;
+    }
+}
+.menu-bar__wrapper {
+    padding: 0;
+}
 .topnav {
-    @include show-for(medium);
-    $menu_height: rem-calc(38px);
+    @include show-for($menu-breakpoint);
     @include top-bar-container();
     @include flex-grid-row;
     justify-content: flex-end;
@@ -89,12 +52,17 @@
         width: 1rem;
         //height: 1rem;
     }
+    ul a:last-child {
+        margin-right: 0;
+        padding-right: 0;
+    }
 }
 .mobile-logo {
     icon {
         background: $black3;
     }
     svg {
-        width: 100px;
+        width: rem-calc(75);
+        height: rem-calc(31);
     }
 }

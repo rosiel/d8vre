@@ -5,6 +5,8 @@
 .menubar__wrapper {
     background: $menubar-color;
     min-height: 5px;
+    border-top: 1px solid darken($menubar-color, 10%);
+    border-bottom: 1px solid darken($menubar-color, 10%);
     .menu--main {
         @include show-for(medium);
     }

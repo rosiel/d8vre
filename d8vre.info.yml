@@ -12,7 +12,7 @@ component-libraries:
     components:
         paths:
             - components
-
+stylesheets-remove: modules/contrib/roblib_vre_footer/css/roblib_vre_footer.css
 
 regions:
   topnav        : Top Navigation

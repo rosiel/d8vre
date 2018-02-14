@@ -21,19 +21,19 @@
 
 .branding {
     .site-logo {
+        @include show-for(medium);
+        border-right: 1px solid #ccc;
+        padding-right: $global-padding/2;
+        margin-right: $global-margin/2;
         img {
-            //width: $logowidth;
             width: 100px;
         }
     }
     .site-name {
-        //padding-top: $global-padding;
-        //width: 20rem;
         a {
-            font-family: $merriweather;
-            color: $black;
-            //font-size: 2.6rem;
+            font-family: $libre;
             font-size: rem-calc(32);
+            color: $black1;
             margin-bottom: 0;
             line-height: 1;
         }
@@ -42,29 +42,24 @@
         font-size: 1.3rem;
         font-size: rem-calc(20);
         line-height: 1;
-        @extend .subheader;
+        //@extend .subheader;
+        color: $grey1;
     }
     @include breakpoint(medium) {
         .site-logo {
             img {
-                width: $logowidth;
+                width: rem-calc(128);
             }
         }
         .site-name {
-            //padding-top: $global-padding;
-            //width: 20rem;
             a {
-                font-family: $merriweather;
-                color: $black;
-                //font-size: 2.6rem;
-                font-size: rem-calc(32);
+                font-size: rem-calc(28);
                 margin-bottom: 0;
                 line-height: 1;
             }
         }
         .site-slogan {
-            font-size: 1.3rem;
-            font-size: rem-calc(20);
+            font-size: rem-calc(18);
             line-height: 1;
         }
     }

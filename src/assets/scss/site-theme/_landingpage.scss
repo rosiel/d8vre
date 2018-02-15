@@ -1,4 +1,7 @@
 .path-frontpage {
+    article strong {
+        font-size:rem-calc(22);
+    }
     .row {
         border-top: 1px solid $grey5;
         margin-top: 2rem;

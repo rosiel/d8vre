@@ -1,0 +1,31 @@
+.path-frontpage {
+    .row {
+        border-top: 1px solid $grey5;
+        margin-top: 2rem;
+        padding-top: 2rem;
+    }
+    .row:nth-child(1) {
+        outline: 1px solid red;
+    }
+    .card {
+        background:#fff;
+        @include callout;
+        @extend .align-center;
+        height: 200px;
+    }
+    .columns:nth-of-type(1) {
+    }
+    .columns:nth-of-type(2) {
+        .card {
+        
+            padding-left:3rem;
+            padding-right:4rem;
+            //padding:3rem 6dd;w;
+        }
+    }
+    .columns:nth-of-type(3) .card {
+        padding: 2rem;
+        display:flex;
+        align-content:center;
+    }
+}

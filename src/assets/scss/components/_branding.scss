@@ -2,18 +2,53 @@
 //------------
 //-  layout  -
 //------------
+$logo-width: 180px;
 @include breakpoint(medium) {
     .branding {
-        @include media-object-container;
-        margin-bottom: 0;
+        display: flex;
+        align-items: center;
+        &__image {
+            //behavior
+            @include show-for(medium);
+            //structure
+            width: $logo-width;
+            //style
+            //--border
+            border-right: 1px solid #ccc;
+            padding-right: $global-padding/2;
+            margin-right: $global-margin/2;
+        }
+        &__text {
+            //outline: 1px red solid;
+            width: rem-calc(350);
+            line-height: 25px;
+
+            .site-name {
+                font-family: $noto-serif;
+                font-size: 1.33rem;
+                a {
+                    margin-bottom: 0;
+                    color: $black2;
+                }
+            }
+
+            .site-slogan {
+                font-size: 1rem;
+                //@extend .subheader;
+                color: $grey1;
+            }
+        }
+        &__image img {
+            width: 100%;
+        }
     }
 
-    .branding__image {
-        @include media-object-section;
-    }
     .branding__text {
-        @include media-object-section;
-        padding-left: 0 !important;
+        .site-name {
+        }
+    }
+    .branding__image img {
+        width: 100%;
     }
 }
 //-----------
@@ -22,48 +57,34 @@
 
 .branding {
     .site-logo {
-        @include show-for(medium);
-        border-right: 1px solid #ccc;
-        padding-right: $global-padding/2;
-        margin-right: $global-margin/2;
-        img {
-            width: 100px;
-        }
     }
     .site-name {
-        width: rem-calc(400);
-        a {
-            //font-family: $libre;
-            font-family: $noto-serif;
-            font-size: rem-calc(24);
-            color: $black1;
-            margin-bottom: 0;
-            line-height: 1;
-        }
-    }
-    .site-slogan {
-        font-size: 1.3rem;
-        font-size: rem-calc(20);
-        line-height: 1;
-        //@extend .subheader;
-        color: $grey1;
+        //width: rem-calc(400);
+        //a {
+        ////font-family: $libre;
+        //font-family: $noto-serif;
+        //font-size: rem-calc(24);
+        //color: $black1;
+        //margin-bottom: 0;
+        //line-height: 1;
+        //}
     }
     @include breakpoint(medium) {
         .site-logo {
             img {
-                width: rem-calc(128);
+                //width: rem-calc(128);
             }
         }
         .site-name {
             a {
-                font-size: rem-calc(24);
-                margin-bottom: 0;
-                line-height: 1;
+                //font-size: rem-calc(24);
+                //margin-bottom: 0;
+                //line-height: 1;
             }
         }
         .site-slogan {
-            font-size: rem-calc(18);
-            line-height: 1;
+            //font-size: rem-calc(18);
+            //line-height: 1;
         }
     }
 }

@@ -3,6 +3,7 @@ global:
   css:
     base:
       dist/assets/css/app.css: {}
+      ./rosie.css: {}
   js:
     dist/assets/js/app.js: {}
   dependencies:

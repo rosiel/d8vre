@@ -37,13 +37,10 @@
  */
 #}
 
-<td {{ attributes }}>
+<tr class="table-expand-row-content" {{ attributes }}>
+<td colspan=2 class="table-expand-row-nested">
   {% for item in items %}
-    {% if loop.first and not loop.last %}
-      <div{{ item.attributes }}><em>{{ item.content }}</em></div>
-    {% else %}
-      <div{{ item.attributes }}>{{ item.content }}</div>
-    {% endif %}
+    <div{{ item.attributes }}>{{ item.content }}</div>
   {% endfor %}
 </td>
 </tr>

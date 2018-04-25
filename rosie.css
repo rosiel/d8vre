@@ -1,1 +1,52 @@
 /* this file bypasses the scss compiler */
+table thead th, 
+table thead tr {
+  background-color: #bbbbbb;
+}
+table.unstriped tbody {
+    background-color: #f1f1f1; }
+table.unstriped tbody tr {
+    border-bottom: 0;
+    border-bottom: 1px solid #f1f1f1;
+    background-color: #f1f1f1; }
+table.unstriped tr.paragraph--type--simple-section {
+    background-color: #ddd; }
+td.field-presenter-names {
+    font-weight: bold;
+    width: 35%;
+}
+.field-description--day-schedule {
+    padding-top: 2em;
+}
+
+
+@media screen and (min-width: 600px) and (max-width: 900px) {
+  figcaption.orbit-caption.lead {
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 599px) {
+  figcaption.orbit-caption.lead {
+    font-size: 12px;
+    padding-bottom: 3px;
+  }
+}
+
+.branding {
+   width: 100%;
+ }
+@media screen and (min-width: 47.5em) {
+
+.branding__image {
+  width: 100%;
+  border-right: none;
+  padding-right: 0px;
+  margin-right: 0px;
+ }
+
+.branding__text {
+    display:none;
+  }
+}
+

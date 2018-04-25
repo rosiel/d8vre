@@ -3569,19 +3569,6 @@ table {
       border-bottom: 1px solid #f1f1f1;
       background-color: #fefefe; }
   
-/* Added by Rosie */
-table thead th, 
-table thead tr {
-  background-color: #bbbbbb;
-}
-
-table.unstriped tbody {
-    background-color: #f1f1f1; }
-table.unstriped tbody tr {
-      border-bottom: 0;
-      border-bottom: 1px solid #f1f1f1;
-      background-color: #fefefe; }
-
 @media screen and (max-width: 63.9375em) {
   table.stack thead {
     display: none; }
